@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App | Action</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <style>
+        .navButtons #dashboardButton{
+            background-color:#ffffff;
+        }
+        .navButtons #actionButton{
+            background-color: rgba(237, 176, 70, 1);
+        }
+    </style>
+</head>
+<body>
+    <section class="body-contain">
+        <section class="sidebar">
+            <div class="sidebar-contain">
+                <h2>To-Do App</h2>
+                <div class="addTaskButton">
+                    <p>Add Task</p>
+                    <button onclick="openAddTask()">
+                        <img src="./assets/image/Add button.svg" alt="">
+                    </button>
+                </div>
+                <section>
+                    <nav class="navButtons">
+                        <button onclick="moveToDashboard()" id="dashboardButton">Dashboard</button>
+                        <button onclick="moveToAction()" id="actionButton">Active</button>
+                        <button onclick="moveToCompleted()" id="completedButton">Completed</button>
+                    </nav>
+                </section>
+            </div>
+        </section>
+        <section class="main-contain">
+            <div>
+                <header class="header">
+                    <div class="header-contain">
+                        <h2>Active</h2>
+                        <div>
+                            <button onclick="signOut()">
+                                    <p>Sing out</p>
+                                    <img src="./assets/image/sing out.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </header>
+                <main class="main" id="main">
+                    <div class="main-contain">
+                        <section class="placeholder2">
+                            <div class="placeholder2-contain">
+                                <h2>Today’s Active Tasks</h2>
+                                <div>
+                                    <p id="data">
+                                        Monday, 18 December 2023
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="placeholder3">
+                            <div class="placeholder3-contain">
+                                <section>
+                                    <div class="task-contain-active" id="task-contain-active">
+                                        
+                                    </div>
+                                </section>
+                            </div>
+                        </section>
+                    </div>
+                </main>
+            </div>
+        </section>
+    </section>  
+    <section class="addtaskblock" id="addtaskbl">
+        <div class="addtaskblockcontain">
+            <input type="text" placeholder="Add title" id="addtitle">
+            <input type="text" placeholder="Add description" id="adddesc">
+            <div class="addtaskblockcontainbuttons">
+                <button onclick="closeAddTask()" id="cancel">Cancel</button>
+                <button onclick="saveNewTask()" id="save">Save</button>
+            </div>
+        </div>
+    </section>
+    <script src="./script/index.js"></script>
+    <script>
+        if(localStorage.getItem('userdata') === null){
+            window.location.href = './signin.html'
+        }
+    </script>
+</body>
+</html>

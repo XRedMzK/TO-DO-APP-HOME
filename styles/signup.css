@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Lexend*/
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(/assets/image/signback.png);
+    background-position: center;
+    background-size: cover;
+}
+.main-contain{
+    height: 72%;
+    width: 62%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(237, 176, 70, 1);
+    border-radius: 20px;
+}
+.contain{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.header{
+    margin-top: 80px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.header h1{
+    font-family: Lexend;
+    font-weight: 700;
+    line-height: 75px;
+    font-size: 60px;
+    color: rgba(255, 255, 255, 1);
+}
+.header p{
+    font-family: Lexend;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+}
+.regform{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+.regform input{
+    width: 702px;
+    height: 73px;
+    padding-left: 36px;
+    color: rgba(181, 181, 181, 1);
+    font-family: Lexend;
+    border: none;
+    border-radius: 12px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+}
+.regform button{
+    margin-top: 20px;
+    width: 196px;
+    height: 73px;
+    border: none;
+    border-radius: 12px;
+    background-color: rgba(186, 81, 18, 1);
+    color: rgba(255, 255, 255, 1);
+    font-family: Lexend;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+.footer p{
+    color: rgba(255, 255, 255, 1);
+    font-family: Lexend;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+}
+.footer p a{
+    color: rgba(186, 81, 18, 1);
+    text-decoration: none;
+}
